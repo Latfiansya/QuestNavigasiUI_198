@@ -36,5 +36,12 @@ fun FormIsian(
                 label = {Text(text = "Nama Lengkap")},
                 onValueChange = {},
             )
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                RadioButton(
+                    selected = false,
+                    onClick = {item}
+                )
+                Text(text = item)
+            }
 
 }
